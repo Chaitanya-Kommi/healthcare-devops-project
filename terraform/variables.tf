@@ -17,3 +17,13 @@ variable "availability_zones" {
   description = "AWS availability zones for the VPC"
   type        = list(string)
 }
+
+variable "repository_names" {
+  description = "List of ECR repository names to create"
+  type        = list(string)
+}
+
+variable "project_name" {
+  description = "Name of the project for tagging"
+  type        = string
+}

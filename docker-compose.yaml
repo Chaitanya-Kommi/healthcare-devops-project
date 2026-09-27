@@ -1,0 +1,19 @@
+services:
+
+  patient-service:
+    image: patient-image:latest
+    container_name: patient-service
+    ports:
+      - "5001:5001"
+
+  appointment-service:
+    image: appointment-image:latest
+    container_name: appointment-service
+    ports:
+      - "5002:5002"
+
+  billing-service:
+    image: billing-image:latest
+    container_name: billing-service
+    ports:
+      - "5003:5003"
